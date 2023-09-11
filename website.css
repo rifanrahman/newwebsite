@@ -15,6 +15,10 @@
     list-style: none;
     overflow: hidden;
 }
+img{
+    width: 100%;
+    display: block;
+}
 @font-face {
     font-family: 'playfair_displayitalic';
     src: url('./fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
@@ -37,31 +41,44 @@ header  {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
-        margin: 20px;
+        padding: 20px 0px;
+    
     }
     /* a{
         color: #54C5CA;
     } */
 .wrapper1{
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
 }
 
-    header div.left h1 a img {
-        margin-right: 15px;
-    }
-
-    
+header div.left h1 a img {
+    margin-right: 15px;
+}
+.left{
+    width: 15%;
+}
+.left img{
+    width: 100%;
+    display: block;
+}
+.right{
+    width: 72%;
+}
+li{
+    margin-right: 10px;
+}
 ul {
     display: flex;
     justify-content: space-evenly;
     color: black;
     align-items: center;
-    font-size: 15px;
-    gap: 54px;
     list-style: none;
+    /* font-size: 14px; */
+    /* width: 90%; */
 }
 
 header div.right nav ul li a {
@@ -77,6 +94,7 @@ header div.right nav ul li:last-child{
     padding: 10px 10px;
     border-radius: 30px;
     color: white;
+    margin-right: 0;
 }
 /* header div.right nav ul li:nth-child(2){
     cursor: pointer;
@@ -135,5 +153,131 @@ header div.right nav ul li:last-child{
     background: #54C5CA;
     display: inline-block;
     padding: 10px 10px;
+    width: 25%;
+}
+@media screen and (max-width: 1280px){
+    ul li{
+        font-size: 12px;
+    }
+    .main .wrapper div.center h2{
+        font-size: 40px;
+    }
+    .main .wrapper div.center p{
+        font-size: 20px;
+    }
+    .main .wrapper form{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1050px){
+    ul li{
+        font-size: 14px;
+    }
+    .main .wrapper form {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 980px){
+/* ul li{
+    margin-right: 10px;
+} */
+.main .wrapper a.button {
+    width: 30%;
+}
+.main .wrapper form {
+    width: 45%;
+}
+.left {
     width: 20%;
 }
+.right {
+    width: 86%;
+}
+ul li{
+    font-size: 11px;
+}
+}
+@media screen and (max-width: 768px){
+ul li{
+   font-size: 12px;
+}
+/* .right{
+    width: 25%;
+} */
+
+}
+@media screen and (max-width: 640px){
+    ul li{
+        display: none;
+}
+.main .wrapper form {
+    width: 50%;
+}
+.right {
+    width: 35%;
+}
+.left {
+    width: 24%;
+}
+.main .wrapper div.center p {
+    font-size: 16px;
+}
+.main .wrapper form {
+    padding: 10px;
+    width: 76%;
+}
+.main .wrapper div.center h2 {
+    font-size: 33px;
+}
+}
+
+@media screen and (max-width: 480px){
+    .main .wrapper div.center h2 {
+        font-size: 33px;
+    }
+    .main .wrapper div.center p {
+        font-size: 16px;
+    }
+    .main .wrapper form {
+        padding: 10px;
+        width: 76%;
+    }
+    .right {
+        width: 35%;
+    }
+    .left {
+        width: 36%;
+    }
+
+
+}
+@media screen and (max-width: 360px){
+    .left{
+        width: 36%;
+    }
+    .right {
+        width: 45%;
+    }
+
+    .main .wrapper div.center p {
+        font-size: 12px;
+    }
+    .main .wrapper form {
+        padding: 8px;
+        width: 77%;
+    }
+    .main .wrapper div.center form div.container {
+        width: 30px;
+    }
+    .main .wrapper div.center form input {
+        padding: 5px 5px;
+        width: 71%;
+        font-size: 11px;
+    }
+    .main .wrapper a.button {
+        width: 34%;
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+  }
+
