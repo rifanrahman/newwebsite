@@ -198,14 +198,31 @@ ul li{
 }
 }
 @media screen and (max-width: 768px){
+    /* .right{
+        width: 25%;
+    } */
 ul li{
    font-size: 12px;
 }
-/* .right{
-    width: 25%;
-} */
-
+.wrapper1 {
+    width: 98%;
 }
+.main .wrapper form {
+    width: 65%;
+    padding: 10px;
+}
+.main .wrapper div.center form div.container {
+    width: 30px;
+}
+.main .wrapper div.center form input {
+    padding: 6px 7px;
+    width: 75%;
+}
+.main .wrapper a.button {
+    width: 28%;
+}
+}
+
 @media screen and (max-width: 640px){
     ul li{
         display: none;
@@ -243,13 +260,15 @@ ul li{
         width: 76%;
     }
     .right {
-        width: 35%;
+        width: 43%;
     }
     .left {
         width: 36%;
     }
-
-
+    .main .wrapper a.button {
+        padding: 6px 4px;
+        width: 36%;
+    }
 }
 @media screen and (max-width: 360px){
     .left{
